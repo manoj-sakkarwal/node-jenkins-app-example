@@ -5,11 +5,11 @@ pipeline {
 //		buildDiscarder(logRotator(numToKeepStr: '10'))
 //	}
 
-	parameters {
-		booleanParam name: 'RUN_TESTS', defaultValue: true, description: 'Run Tests?'
-		booleanParam name: 'RUN_ANALYSIS', defaultValue: false, description: 'Run Static Code Analysis?'
-		booleanParam name: 'DEPLOY', defaultValue: flase, description: 'Deploy Artifacts?'
-	}
+//	parameters {
+//		booleanParam name: 'RUN_TESTS', defaultValue: true, description: 'Run Tests?'
+//		booleanParam name: 'RUN_ANALYSIS', defaultValue: false, description: 'Run Static Code Analysis?'
+//		booleanParam name: 'DEPLOY', defaultValue: flase, description: 'Deploy Artifacts?'
+//	}
 
 	stages {
         stage('Build') {
